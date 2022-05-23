@@ -175,14 +175,6 @@ module.exports = function npcsummoner(script) {
 			"value": 609
 		},
 		{
-			"tname": "Bellicarium",
-			"name": "bel",
-			"type": 50,
-			"templateId": 2045,
-			"huntingZoneId": 183,
-			"value": 141
-		},
-		{
 			"tname": "Specialty Store",
 			"name": "sp",
 			"type": 9,
