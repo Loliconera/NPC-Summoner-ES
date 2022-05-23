@@ -39,12 +39,12 @@ module.exports = function npcsummoner(script) {
 		config.merchant_template = 2019;
 		settingUpdate();
 	}
-	let merchant_id = 3518437209224331
+	let merchant_id = 3518437209160004
 	if (("merchant_id" in config)) {
 		merchant_id = config.merchant_id;
 	}
 	if (!("merchant_id" in config)) {
-		config.merchant_id = 3518437209224331;
+		config.merchant_id = 3518437209160004;
 		settingUpdate();
 	}
 	let vg_template = 2058
@@ -55,12 +55,12 @@ module.exports = function npcsummoner(script) {
 		config.vg_template = 2058;
 		settingUpdate();
 	}
-	let vg_id = 3518437209069257
+	let vg_id = 3518437209159742
 	if (("vg_id" in config)) {
 		vg_id = config.vg_id;
 	}
 	if (!("vg_id" in config)) {
-		config.vg_id = 3518437209069257;
+		config.vg_id = 3518437209159742;
 		settingUpdate();
 	}
 	let sp_template = 2109
@@ -71,12 +71,12 @@ module.exports = function npcsummoner(script) {
 		config.sp_template = 2109;
 		settingUpdate();
 	}
-	let sp_id = 3518437209205338
+	let sp_id = 3518437209167157
 	if (("sp_id" in config)) {
 		sp_id = config.sp_id;
 	}
 	if (!("sp_id" in config)) {
-		config.sp_id = 3518437209205338;
+		config.sp_id = 3518437209167157;
 		settingUpdate();
 	}
 	
@@ -88,12 +88,12 @@ module.exports = function npcsummoner(script) {
 		config.fishmonger_template = 2062;
 		settingUpdate();
 	}
-	let fishmonger_id = 3518437209066564
+	let fishmonger_id = 3518437209179305
 	if (("fishmonger_id" in config)) {
 		fishmonger_id = config.fishmonger_id;
 	}
 	if (!("fishmonger_id" in config)) {
-		config.fishmonger_id = 3518437209066564;
+		config.fishmonger_id = 3518437209179305;
 		settingUpdate();
 	}
 	
@@ -105,12 +105,12 @@ module.exports = function npcsummoner(script) {
 		config.fishcratevendor_template = 9805;
 		settingUpdate();
 	}
-	let fishcratevendor_id = 3518437209069110
+	let fishcratevendor_id = 3518437209159501
 	if (("fishcratevendor_id" in config)) {
 		fishcratevendor_id = config.fishcratevendor_id;
 	}
 	if (!("fishcratevendor_id" in config)) {
-		config.fishcratevendor_id = 3518437209069110;
+		config.fishcratevendor_id = 3518437209159501;
 		settingUpdate();
 	}
 	
@@ -122,12 +122,12 @@ module.exports = function npcsummoner(script) {
 		config.fishmerch_template = 2063;
 		settingUpdate();
 	}
-	let fishmerch_id = 3518437209063865
+	let fishmerch_id = 3518437209179610
 	if (("fishmerch_id" in config)) {
 		fishmerch_id = config.fishmerch_id;
 	}
 	if (!("fishmerch_id" in config)) {
-		config.fishmerch_id = 3518437209063865;
+		config.fishmerch_id = 3518437209179610;
 		settingUpdate();
 	}
 	
@@ -304,43 +304,43 @@ module.exports = function npcsummoner(script) {
 				config.merchant_id = Number(merchant_id);
 				summons[1].npcId = merchant_id
 				settingUpdate();				
-				console.log("NPC =Merchant=  identificado, configuración actualizada: ", merchant_id);
+				console.log("NPC Merchant identificado, configuración actualizada: ", merchant_id);
 				break;
 			case vg_template:
 				vg_id = packet.gameId;
 				config.vg_id = Number(vg_id);
 				summons[2].npcId = vg_id
 				settingUpdate();				
-				console.log("NPC =Merchant=  identificado, configuración actualizada: ", merchant_id);				
-				console.log("NPC =Vanguard Initiative= identificado: ", vg_id);
+				console.log("NPC Merchant identificado, configuración actualizada: ", merchant_id);				
+				console.log("NPC Vanguard Initiative= identificado: ", vg_id);
 				break;	
 			case sp_template:
 				sp_id = packet.gameId;
 				config.sp_id = Number(sp_id);
 				summons[3].npcId = sp_id
 				settingUpdate();				
-				console.log("NPC =Specialty Store=  identificado, configuración actualizada: ", sp_id);
+				console.log("NPC Specialty Store identificado, configuración actualizada: ", sp_id);
 				break;
 			case fishmonger_template:
 				fishmonger_id = packet.gameId;
 				config.fishmonger_id = Number(fishmonger_id);
 				summons[4].npcId = fishmonger_id
 				settingUpdate();				
-				console.log("NPC =fishmonger_id= identificado, configuración actualizada: ", fishmonger_id);
+				console.log("NPC Fish Monger identificado, configuración actualizada: ", fishmonger_id);
 				break;
 			case fishcratevendor_template:
 				fishcratevendor_id = packet.gameId;
 				config.fishcratevendor_id = Number(fishcratevendor_id);
 				summons[5].npcId = fishcratevendor_id
 				settingUpdate();				
-				console.log("NPC =fishcratevendor= identificado, configuración actualizada: ", fishcratevendor_id);
+				console.log("NPC Fish Crate Vendor identificado, configuración actualizada: ", fishcratevendor_id);
 				break;
 			case fishmerch_template:
 				fishmerch_id = packet.gameId;
 				config.fishmerch_id = Number(fishmerch_id);
 				summons[6].npcId = fishmerch_id
 				settingUpdate();				
-				console.log("NPC =fishmerch= identificado, configuración actualizada: ", fishmerch_id);
+				console.log("NPC Fish Merchant identificado, configuración actualizada: ", fishmerch_id);
 				break;			
 			default:
 				break;

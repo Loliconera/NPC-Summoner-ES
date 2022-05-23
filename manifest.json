@@ -2,7 +2,8 @@
     "files": {
         "C_REQUEST_CONTRACT.50.def": "5b49e5c790aa7bf19f958355b54dc6e3c12b8ad5e4e2ee7c98f2c26001055fcb",
         "README.md": "e085d5ee7fbed252d3fc71c548774f188b0f19eda075782673e8edf9763a074d",
-        "index.js": "cb235fb91fcd788f3ceb22db15ea725f51be144205462835c5102e5b3bcb1621",
+        "config.json": "9af8ff304a4495e8ec2a26f57f2f586ec3267d919139287c5504b19873c41014",
+        "index.js": "b593b1f80a1abd10e7918f85bb9bee1db8fefae7a9ffe35f67bcf35243dcab2f",
         "module.json": "43bd11ab0e37e0b2d17cb12d5f73e5d3e93e262922e4190bd47202ca1f08fe9e",
         "screen/s.png": "89257610ed46e993c5692eb833c4bc4d29103619dd9f085224d2456f8249c418"
     },
