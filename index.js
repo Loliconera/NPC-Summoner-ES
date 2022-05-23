@@ -178,10 +178,9 @@ module.exports = function npcsummoner(script) {
 			"tname": "Bellicarium",
 			"name": "bel",
 			"type": 50,
-			"value": 141,
-			"gameId": null,
 			"templateId": 2045,
-			"huntingZoneId": 183
+			"huntingZoneId": 183,
+			"value": 141
 		},
 		{
 			"tname": "Specialty Store",
@@ -195,28 +194,28 @@ module.exports = function npcsummoner(script) {
 			"name": "broker",
 		},
 		{
-			"tname": "fishcratevendor",
+			"tname": "Fish Crate",
 			"name": "fishcratevendor",
 			"type": 93,
 			"npcId": fishcratevendor_id,
 			"value": 1001
 		},
 		{
-			"tname": "fishmonger",
+			"tname": "Fish Monger",
 			"name": "fishmonger",
 			"type": 93,
 			"npcId": fishmonger_id,
 			"value": 1000
 		},
 		{
-			"tname": "fishmerch",
+			"tname": "Fish Merch",
 			"name": "fishmerch",
 			"type": 9,
 			"npcId": fishmerch_id,
 			"value": 16094
 		},
 		{
-			"tname": "pescador de caña",
+			"tname": "Angler",
 			"name": "angler",
 			"type": 20,
 			"npcId": 0,
@@ -305,43 +304,43 @@ module.exports = function npcsummoner(script) {
 				config.merchant_id = Number(merchant_id);
 				summons[1].npcId = merchant_id
 				settingUpdate();				
-				console.log("NPC =Торговец=  идентифицирован, конфигурация обновлена: ", merchant_id);
+				console.log("NPC =Merchant=  identificado, configuración actualizada: ", merchant_id);
 				break;
 			case vg_template:
 				vg_id = packet.gameId;
 				config.vg_id = Number(vg_id);
 				summons[2].npcId = vg_id
 				settingUpdate();				
-				console.log("NPC =Торговец=  идентифицирован, конфигурация обновлена: ", merchant_id);				
-				console.log("NPC =Магазин Редкостей= идентифицирован: ", vg_id);
+				console.log("NPC =Merchant=  identificado, configuración actualizada: ", merchant_id);				
+				console.log("NPC =Vanguard Initiative= identificado: ", vg_id);
 				break;	
 			case sp_template:
 				sp_id = packet.gameId;
 				config.sp_id = Number(sp_id);
 				summons[3].npcId = sp_id
 				settingUpdate();				
-				console.log("NPC =Магазин Редкостей=  идентифицирован, конфигурация обновлена: ", sp_id);
+				console.log("NPC =Specialty Store=  identificado, configuración actualizada: ", sp_id);
 				break;
 			case fishmonger_template:
 				fishmonger_id = packet.gameId;
 				config.fishmonger_id = Number(fishmonger_id);
 				summons[4].npcId = fishmonger_id
 				settingUpdate();				
-				console.log("NPC =Торговец Рыбой= идентифицирован, конфигурация обновлена: ", fishmonger_id);
+				console.log("NPC =fishmonger_id= identificado, configuración actualizada: ", fishmonger_id);
 				break;
 			case fishcratevendor_template:
 				fishcratevendor_id = packet.gameId;
 				config.fishcratevendor_id = Number(fishcratevendor_id);
 				summons[5].npcId = fishcratevendor_id
 				settingUpdate();				
-				console.log("NPC =Торговец ящиками с рыбой= идентифицирован, конфигурация обновлена: ", fishcratevendor_id);
+				console.log("NPC =fishcratevendor= identificado, configuración actualizada: ", fishcratevendor_id);
 				break;
 			case fishmerch_template:
 				fishmerch_id = packet.gameId;
 				config.fishmerch_id = Number(fishmerch_id);
 				summons[6].npcId = fishmerch_id
 				settingUpdate();				
-				console.log("NPC =Торговец Товарами Для Рыбалки= идентифицирован, конфигурация обновлена: ", fishmerch_id);
+				console.log("NPC =fishmerch= identificado, configuración actualizada: ", fishmerch_id);
 				break;			
 			default:
 				break;

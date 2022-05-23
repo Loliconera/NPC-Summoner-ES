@@ -1,6 +1,6 @@
 {
     "author": "<font color='#00FFFF'>Salchy</font>",
-    "description": "NPC Summomer",
+    "description": "Convoca a cualquier NPC (Merchant, banco de Pet/Guild/Ropas, Vanguard, Broker, etc) desde cualquier lugar",
     "disableAutoUpdate": false,
     "disabled": false,
     "donationUrl": "",
